@@ -1,14 +1,3 @@
-<form>
-    <h2>Nova Transferencia</h2>
-    <div>
-        <label for="valor">Valor</label>
-        <input id="valor" type="text" >
-    </div>
-  
-    <div>
-      <label for="destino">Destino</label>
-      <input id="destino" type="text" >
-    </div>
+<app-nova-transferencia (aoTranferir)="transferir($event)"></app-nova-transferencia>
 
-    <button>Transferir</button>
-</form>
+<app-extrato [transferencia]="transferencia"></app-extrato>
